@@ -21,7 +21,7 @@ public class HealthCheackIT {
 		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.183:4444/wd/hub"),cap);
 		try {
 			
-		driver.navigate().to("http://192.168.0.183:9999/tasks/");
+		driver.navigate().to("http://192.168.0.13:9999/tasks/");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);	
 		String version = driver.findElement(By.id("version")).getText();
 		System.out.println(version);
