@@ -18,7 +18,7 @@ public class HealthCheackIT {
 	public void healthCheck() throws MalformedURLException{
 		
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
-		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.183:4444/wd/hub"),cap);
+		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.13:4444/wd/hub"),cap);
 		try {
 			
 		driver.navigate().to("http://192.168.0.13:9999/tasks/");
